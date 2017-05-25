@@ -1,10 +1,3 @@
-"""
-Cases:
-a. all caps
-b. !!!+ at the end of line
-c. 'help', 'asp', 'urgent' in Body
-"""
-
 from collections import OrderedDict
 
 
@@ -13,7 +6,7 @@ def is_stressful(subj):
 
     subject = subj.split()
     # case1:
-    if ''.join(subject).isupper():
+    if subj.isupper():
         return True
 
     # case2:
